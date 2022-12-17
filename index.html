@@ -5,19 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <script>index.js</script>
+    <link rel="stylesheet" href="index.css">
+    
     <title>JavaScript BlackJack</title>
 </head>
 <body>
     <div>
-        <card id="firstCard">
-            First Card: 
-        </card>
-        <card id="secondCard">
-            Second Card: 
-        </card>
+        <h1 id="blackJack">Welcome to JavaScript BlackJack!</h1>
+        <p id="message-el">Want to play a round or two?</p>
+        <button id="start-el" onclick="startGame()">Start the Game!</button>
+        <br><br>
+        <p>Cards</p>
+        <div>
+            <card id="firstCard">
+                First Card: 
+            </card>
+            <card id="secondCard">
+                Second Card: 
+            </card>
+        </div>
+        <p id="sum-el" >Sum:</p>
+        
     </div>
     
+    <script src="index.js"></script>
 </body>
 
 </html>
