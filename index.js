@@ -7,12 +7,10 @@ if (age < 21) {
   console.log("Have a seat at the Black Jack table!");
 }
 // Get cards and play Black Jack
-var firstCard = document.getElementById("firstCard")
-var secondCard = document.getElementById("secondCard")
-var sum = firstCard + secondCard;
+var firstCardEl = document.getElementById("firstCard")
+var secondCardEl = document.getElementById("secondCard")
+// var sum = firstCard + secondCard;
 let sumEl = document.querySelector("#sum-el")
-
-console.log(sumEl)
 
 let hasBlackJack = false;
 let isAlive = true;
@@ -26,7 +24,9 @@ function startGame() {
     var sum = firstCard + secondCard;
     firstCard.textContent = firstCard
     secondCard.textContent = secondCard
-    sumEl.textContent = "Sum: " + sum
+    firstCardEl.textContent = "First Card: " + firstCard
+    secondCardEl.textContent = "; Second Card: " + secondCard
+    sumEl.textContent = "You have: " + sum
   if (sum < 21) {
     message = "You have " + sum + "; draw another card?";
   } else if (sum === 21) {
