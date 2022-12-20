@@ -3,7 +3,7 @@ body {
     background-image: url("media/blackJack.png");
     background-size: cover;
     font-weight: bold;
-    color: white;
+    color: rgb(223, 214, 214);
     text-align: center;
 }
 #blackJackCard {
@@ -17,7 +17,9 @@ body {
 #message-el {
     font-style: italic;
 }
-
+#new-card-el {
+    margin-bottom: 15px;
+}
  
 button {
     color: #024420;
@@ -28,4 +30,6 @@ button {
     font-weight: bold;
     border: none;
     border-radius: 2px;
+    margin-bottom: 4px;
+    margin-top: 4px;
 }
